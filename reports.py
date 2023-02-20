@@ -29,8 +29,6 @@ from alpaca.data.timeframe import TimeFrame
 from Lab93_Cryptogram.CredentialManagement import *
 from Lab93_TradeClient.AccountData import AccountEnumeration
 
-credabase="/server/administrator/database/credentials.db"
-
 
 class PortfolioReporter:
 
