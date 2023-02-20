@@ -176,7 +176,6 @@ class PortfolioReporter:
                 {"Investments": [
                     ["Equity", self._round(account["equity"], 2)],
                     ["Cash", self._round(account["cash"], 2)],
-                    ["Bitcoin P/L", self._round(positions["BTCUSD"]["unrealized profit/loss"], 2)]
                 ]}
             )
 
