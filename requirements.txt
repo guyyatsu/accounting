@@ -1,0 +1,7 @@
+Lab93-Cryptogram
+Lab93-TradeClient
+pyexcel-ods
+telepot
+alpaca-py
+plotly
+kaleido
