@@ -255,7 +255,6 @@ class PortfolioReporter:
 
 
         """ system runtime definition and execution """
-
         def RuntimeExecution():
 
             threads = [ Thread(target=CollectMinutes, daemon=True),
