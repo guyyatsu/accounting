@@ -24,7 +24,6 @@ from alpaca.data.requests import CryptoBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
 # Plotly graphing library.
-import plotly.graph_objects as go
 
 # In-house packages.
 from Lab93_Cryptogram.CredentialManagement import *
