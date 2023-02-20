@@ -257,11 +257,19 @@ class PortfolioReporter:
         """ system runtime definition and execution """
         def RuntimeExecution():
 
+            Thread(target=CollectMinutes, daemon=True).start()
+            """
             threads = [ Thread(target=CollectMinutes, daemon=True),
                         Thread(target=RecordPosition, daemon=True),
                         Thread(target=WriteCandles, daemon=True)    ]
 
             for thread in threads: thread.start(); thread.join()
+            """
+
+            RecordPosition()
+            WriteCandles()
+
+            report = datetime.strftime(report_start, "%Y-%m-%d")
 
             # Alert the administrator of his new report.
             return self.AdministratorHotline.sendMessage(
