@@ -273,8 +273,10 @@ class PortfolioReporter:
 
             # Alert the administrator of his new report.
             return self.AdministratorHotline.sendMessage(
-                self.TelegramID,
-                "Your daily report is ready."
+                self.TelegramID, (
+                  f"Your daily report for {report} is ready.\n"
+                  f"You can view it here:\nhttp://lab-93.guyyatsu.me/reports/daily/{report}"
+                )
             )
 
 
