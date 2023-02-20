@@ -282,11 +282,6 @@ if __name__ == "__main__":
     parser.add_argument("-w", "--weekly", action="store_true")
     arguments = parser.parse_args()
 
-    """
-    if arguments.weekly:
-        spreadsheet = PortfolioReporter(reportDirectory=arguments.reports_directory)
-        spreadsheet.WeeklyReport(database=arguments.price_index)
-    """ 
 
     if arguments.daily:
 
