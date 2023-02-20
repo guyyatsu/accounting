@@ -12,7 +12,7 @@ from threading import Thread
 # Imported Libraries
 import telepot
 import pandas
-import matplotlib.pyplot
+import plotly.graph_objects as graphing
 
 # Spreadsheet library methods.
 from pyexcel_ods import get_data as read_spreadsheet
