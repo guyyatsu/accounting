@@ -247,7 +247,7 @@ class PortfolioReporter:
                     open=market_open,
                     high=market_high,
                     low=market_low,
-                    close=market.close
+                    close=market_close
                 )
             ]
 
