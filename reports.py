@@ -63,7 +63,7 @@ class PortfolioReporter:
 
         """ Telegram API """
 
-        # Hot-line to The Administrators personal desk.
+        # Administrator account user-id for Telegram.
         self.TelegramID = SingleKeyAPICredentials(
             platform="telegram_admin",
             credabase=credentialDatabase,
@@ -71,7 +71,7 @@ class PortfolioReporter:
         )
 
 
-        # Ignition key for the server golem.
+        # API Key for Guyyatsu-Golem Telegram bot.
         self.TelegramAPI = SingleKeyAPICredentials(
             platform="telegram",
             credabase=credentialDatabase,
