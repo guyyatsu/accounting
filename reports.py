@@ -242,7 +242,7 @@ class PortfolioReporter:
                 market_time.append(time)
 
             CandlestickData= [
-                go.Candlestick(
+                graphing.Candlestick(
                     x=market_time,
                     open=market_open,
                     high=market_high,
@@ -251,7 +251,7 @@ class PortfolioReporter:
                 )
             ]
 
-            go.Figure(CandlestickData).write_image(candlegraph)
+            graphing.Figure(CandlestickData).write_image(candlegraph)
 
 
         """ system runtime definition and execution """
